@@ -1,5 +1,10 @@
 'use strict';
 
+// Pantone functional colors for diff highlighting
+const PANTONE_GREENERY = "#88b04b";  // Pantone 2017 — diff inserted
+const PANTONE_TANGO    = "#dd4132";  // Pantone 2012 — diff deleted
+const PANTONE_MIMOSA   = "#efc050";  // Pantone 2009 — diff changed
+
 module.exports = function generateTokenColors(syntax) {
   return [
     // COMMENTS
@@ -285,17 +290,17 @@ module.exports = function generateTokenColors(syntax) {
     {
       name: "Diff inserted",
       scope: ["markup.inserted"],
-      settings: { foreground: "#88b04b" }
+      settings: { foreground: PANTONE_GREENERY }
     },
     {
       name: "Diff deleted",
       scope: ["markup.deleted"],
-      settings: { foreground: "#dd4132" }
+      settings: { foreground: PANTONE_TANGO }
     },
     {
       name: "Diff changed",
       scope: ["markup.changed"],
-      settings: { foreground: "#efc050" }
+      settings: { foreground: PANTONE_MIMOSA }
     }
   ];
 };
