@@ -4,7 +4,7 @@
 
 ### 200 expertly crafted color themes inspired by iconic Pantone colors
 
-[![Version](https://img.shields.io/badge/version-0.1.0-a47864?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=andreluiz.pantone-theme)
+[![Version](https://img.shields.io/badge/version-0.1.0-a47864?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=AndlzEngineering.pantone-theme)
 [![License](https://img.shields.io/badge/license-MIT-88b04b?style=for-the-badge)](LICENSE)
 [![Themes](https://img.shields.io/badge/themes-200-6667ab?style=for-the-badge)](#all-100-colors)
 
@@ -233,7 +233,7 @@ All syntax foreground colors are contrast-checked against the background and ite
 ### From the Command Line
 
 ```bash
-code --install-extension andreluiz.pantone-theme
+code --install-extension AndlzEngineering.pantone-theme
 ```
 
 ### From Source

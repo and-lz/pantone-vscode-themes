@@ -3,7 +3,7 @@
   "displayName": "Pantone Theme",
   "description": "A collection of VS Code color themes based on official Pantone colors, featuring analogous and complementary color harmonies with bold/italic syntax styling.",
   "version": "0.1.0",
-  "publisher": "andreluiz",
+  "publisher": "AndlzEngineering",
   "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
