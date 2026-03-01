@@ -1,0 +1,1041 @@
+{
+  "name": "pantone-theme",
+  "displayName": "Pantone Theme",
+  "description": "A collection of VS Code color themes based on official Pantone colors, featuring analogous and complementary color harmonies with bold/italic syntax styling.",
+  "version": "0.1.0",
+  "publisher": "andreluiz",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "pantone",
+    "dark-theme",
+    "light-theme"
+  ],
+  "galleryBanner": {
+    "color": "#a47864",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/and-lz/pantone-vscode-themes"
+  },
+  "homepage": "https://github.com/and-lz/pantone-vscode-themes#readme",
+  "bugs": {
+    "url": "https://github.com/and-lz/pantone-vscode-themes/issues"
+  },
+  "scripts": {
+    "build": "node src/build.js",
+    "package": "vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Pantone Mocha Mousse (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-mocha-mousse-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Mocha Mousse (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-mocha-mousse-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Peach Fuzz (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-peach-fuzz-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Peach Fuzz (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-peach-fuzz-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Viva Magenta (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-viva-magenta-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Viva Magenta (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-viva-magenta-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Very Peri (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-very-peri-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Very Peri (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-very-peri-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Illuminating (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-illuminating-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Illuminating (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-illuminating-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Ultimate Gray (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-ultimate-gray-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Ultimate Gray (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-ultimate-gray-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Classic Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-classic-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Classic Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-classic-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Living Coral (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-living-coral-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Living Coral (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-living-coral-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Ultra Violet (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-ultra-violet-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Ultra Violet (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-ultra-violet-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Greenery (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-greenery-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Greenery (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-greenery-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Rose Quartz (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-rose-quartz-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Rose Quartz (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-rose-quartz-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Serenity (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-serenity-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Serenity (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-serenity-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Marsala (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-marsala-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Marsala (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-marsala-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Radiant Orchid (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-radiant-orchid-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Radiant Orchid (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-radiant-orchid-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Emerald (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-emerald-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Emerald (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-emerald-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Tangerine Tango (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-tangerine-tango-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Tangerine Tango (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-tangerine-tango-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Honeysuckle (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-honeysuckle-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Honeysuckle (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-honeysuckle-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Turquoise (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-turquoise-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Turquoise (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-turquoise-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Mimosa (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-mimosa-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Mimosa (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-mimosa-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Blue Iris (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-blue-iris-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Blue Iris (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-blue-iris-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Chili Pepper (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-chili-pepper-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Chili Pepper (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-chili-pepper-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Sand Dollar (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-sand-dollar-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Sand Dollar (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-sand-dollar-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Blue Turquoise (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-blue-turquoise-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Blue Turquoise (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-blue-turquoise-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Tigerlily (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-tigerlily-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Tigerlily (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-tigerlily-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Aqua Sky (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-aqua-sky-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Aqua Sky (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-aqua-sky-light-color-theme.json"
+      },
+      {
+        "label": "Pantone True Red (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-true-red-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone True Red (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-true-red-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Fuchsia Rose (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-fuchsia-rose-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Fuchsia Rose (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-fuchsia-rose-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Cerulean (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-cerulean-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Cerulean (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-cerulean-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Classic Red (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-classic-red-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Classic Red (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-classic-red-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Royal Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-royal-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Royal Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-royal-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Yellow (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-yellow-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Yellow (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-yellow-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Orange (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-orange-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Orange (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-orange-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Purple (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-purple-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Purple (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-purple-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Silver (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-silver-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Silver (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-silver-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Gold (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-gold-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Gold (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-gold-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Process Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-process-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Process Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-process-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Warm Red (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-warm-red-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Warm Red (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-warm-red-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Saffron (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-saffron-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Saffron (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-saffron-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Red (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-dark-red-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Red (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-dark-red-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Bright Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-bright-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Bright Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-bright-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Lavender (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-lavender-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Lavender (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-lavender-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Turquoise Classic (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-turquoise-classic-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Turquoise Classic (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-turquoise-classic-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Peach (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-peach-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Peach (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-peach-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Sky Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-sky-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Sky Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-sky-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Burgundy (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-burgundy-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Burgundy (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-burgundy-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Poppy (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-poppy-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Poppy (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-poppy-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Lime Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-lime-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Lime Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-lime-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Cornflower Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-cornflower-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Cornflower Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-cornflower-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Aqua (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-aqua-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Aqua (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-aqua-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Warm Gray (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-warm-gray-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Warm Gray (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-warm-gray-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Steel Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-steel-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Steel Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-steel-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Brown (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-dark-brown-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Brown (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-dark-brown-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Yellow Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-yellow-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Yellow Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-yellow-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Hot Pink (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-hot-pink-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Hot Pink (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-hot-pink-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Baby Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-baby-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Baby Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-baby-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Blush Pink (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-blush-pink-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Blush Pink (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-blush-pink-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Cobalt Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-cobalt-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Cobalt Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-cobalt-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Khaki (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-khaki-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Khaki (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-khaki-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Flame Orange (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-flame-orange-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Flame Orange (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-flame-orange-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Indigo (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-indigo-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Indigo (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-indigo-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Deep Pink (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-deep-pink-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Deep Pink (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-deep-pink-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Olive Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-olive-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Olive Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-olive-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Mauve (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-mauve-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Mauve (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-mauve-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Sage (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-sage-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Sage (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-sage-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Salmon (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-salmon-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Salmon (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-salmon-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Dusty Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-dusty-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Dusty Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-dusty-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Amber (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-amber-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Amber (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-amber-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Mint Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-mint-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Mint Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-mint-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Wine (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-wine-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Wine (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-wine-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Ice Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-ice-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Ice Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-ice-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Burnt Orange (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-burnt-orange-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Burnt Orange (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-burnt-orange-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Forest Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-forest-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Forest Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-forest-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Violet (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-violet-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Violet (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-violet-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Golden Yellow (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-golden-yellow-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Golden Yellow (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-golden-yellow-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Maroon (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-dark-maroon-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Dark Maroon (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-dark-maroon-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Pewter (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-pewter-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Pewter (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-pewter-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Teal (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-teal-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Teal (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-teal-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Blush (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-blush-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Blush (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-blush-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Navy (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-navy-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Navy (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-navy-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Tan (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-tan-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Tan (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-tan-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Pink (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-neon-pink-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Pink (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-neon-pink-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-neon-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-neon-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Orange (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-neon-orange-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Orange (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-neon-orange-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Yellow (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-neon-yellow-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Yellow (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-neon-yellow-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-neon-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Neon Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-neon-blue-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Wheat (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-wheat-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Wheat (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-wheat-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Peacock Green (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-peacock-green-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Peacock Green (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-peacock-green-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Coral (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-coral-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Coral (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-coral-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Chocolate (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-chocolate-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Chocolate (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-chocolate-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Ruby (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-ruby-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Ruby (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-ruby-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Graphite (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-graphite-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Graphite (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-graphite-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Sand (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-sand-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Sand (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-sand-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Chartreuse (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-chartreuse-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Chartreuse (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-chartreuse-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Brick Red (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-brick-red-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Brick Red (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-brick-red-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Cyan (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-cyan-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Cyan (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-cyan-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Sienna (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-sienna-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Sienna (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-sienna-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Lilac (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-lilac-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Lilac (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-lilac-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Plum (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-plum-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Plum (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-plum-light-color-theme.json"
+      },
+      {
+        "label": "Pantone Slate Blue (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pantone-slate-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Pantone Slate Blue (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/pantone-slate-blue-light-color-theme.json"
+      }
+    ]
+  }
+}
