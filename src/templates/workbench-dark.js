@@ -32,8 +32,8 @@ module.exports = function generateDarkWorkbench(palette) {
     "editor.inactiveSelectionBackground": alpha(p.primary, 0.15),
     "editor.lineHighlightBackground": alpha(p.primary, 0.10),
     "editor.lineHighlightBorder": alpha(p.primary, 0),
-    "editor.findMatchBackground": alpha(p.accent2, 0.40),
-    "editor.findMatchHighlightBackground": alpha(p.accent2, 0.20),
+    "editor.findMatchBackground": alpha(p.number, 0.40),
+    "editor.findMatchHighlightBackground": alpha(p.number, 0.20),
     "editor.wordHighlightBackground": alpha(p.primary, 0.20),
     "editorBracketMatch.background": alpha(p.primary, 0.25),
     "editorBracketMatch.border": alpha(p.primary, 0.60),
@@ -48,7 +48,7 @@ module.exports = function generateDarkWorkbench(palette) {
     "editorGutter.deletedBackground": PANTONE_TANGO,
     "editorError.foreground": PANTONE_TANGO,
     "editorWarning.foreground": PANTONE_MIMOSA,
-    "editorInfo.foreground": p.complementary,
+    "editorInfo.foreground": p.string,
 
     // Sidebar
     "sideBar.background": d.bgTertiary,
@@ -63,7 +63,7 @@ module.exports = function generateDarkWorkbench(palette) {
     "activityBar.foreground": p.primary,
     "activityBar.inactiveForeground": d.fgDimmed,
     "activityBar.border": d.border,
-    "activityBarBadge.background": p.complementary,
+    "activityBarBadge.background": p.string,
     "activityBarBadge.foreground": p.pantoneWhite,
 
     // Title Bar
@@ -89,7 +89,7 @@ module.exports = function generateDarkWorkbench(palette) {
     "statusBar.background": darken(p.primary, 40),
     "statusBar.foreground": lighten(p.primary, 40),
     "statusBar.border": d.border,
-    "statusBar.debuggingBackground": p.complementary,
+    "statusBar.debuggingBackground": p.string,
     "statusBar.debuggingForeground": p.pantoneWhite,
     "statusBar.noFolderBackground": d.bgSecondary,
     "statusBarItem.hoverBackground": alpha(p.primary, 0.30),
@@ -104,7 +104,7 @@ module.exports = function generateDarkWorkbench(palette) {
     "inputOption.activeBorder": p.primary,
     "inputValidation.errorBorder": PANTONE_TANGO,
     "inputValidation.warningBorder": PANTONE_MIMOSA,
-    "inputValidation.infoBorder": p.complementary,
+    "inputValidation.infoBorder": p.string,
 
     // Dropdown
     "dropdown.background": d.bgSecondary,
@@ -138,7 +138,7 @@ module.exports = function generateDarkWorkbench(palette) {
 
     // Minimap
     "minimap.background": d.bg,
-    "minimap.findMatchHighlight": alpha(p.accent2, 0.60),
+    "minimap.findMatchHighlight": alpha(p.number, 0.60),
     "minimap.selectionHighlight": alpha(p.primary, 0.40),
 
     // Panel
@@ -201,8 +201,8 @@ module.exports = function generateDarkWorkbench(palette) {
     // Focus & Misc
     "focusBorder": alpha(p.primary, 0.60),
     "selection.background": alpha(p.primary, 0.30),
-    "textLink.foreground": p.complementary,
-    "textLink.activeForeground": lighten(p.complementary, 15),
+    "textLink.foreground": p.string,
+    "textLink.activeForeground": lighten(p.string, 15),
     "progressBar.background": p.primary,
     "icon.foreground": d.fgDimmed,
     "descriptionForeground": d.fgDimmed,

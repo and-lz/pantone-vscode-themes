@@ -51,18 +51,18 @@ function resolveSyntaxColors(palette, mode) {
       };
 
   return {
-    keyword:     adjust(palette.primary),
+    keyword:     adjust(palette.keyword),
     comment:     base.fgDimmed,
-    string:      adjust(palette.complementary),
-    number:      adjust(palette.accent2),
-    type:        adjust(palette.analogous1),
-    function:    adjust(palette.accent1),
+    string:      adjust(palette.string),
+    number:      adjust(palette.number),
+    type:        adjust(palette.type),
+    function:    adjust(palette.function),
     variable:    base.fg,
-    constant:    adjust(palette.analogous2),
-    className:   adjust(palette.analogous3),
-    tag:         adjust(palette.primary),
-    attribute:   adjust(palette.accent1),
-    operator:    adjust(lighten(palette.primary, 15)),
+    constant:    adjust(palette.constant),
+    className:   adjust(palette.className),
+    tag:         adjust(palette.keyword),
+    attribute:   adjust(palette.function),
+    operator:    adjust(lighten(palette.keyword, 15)),
     punctuation: base.fgDimmed,
   };
 }

@@ -42,8 +42,8 @@ module.exports = function generateLightWorkbench(palette) {
     "editor.inactiveSelectionBackground": alpha(primaryOnLight, 0.10),
     "editor.lineHighlightBackground": alpha(primaryOnLight, 0.08),
     "editor.lineHighlightBorder": alpha(primaryOnLight, 0),
-    "editor.findMatchBackground": alpha(p.accent2, 0.35),
-    "editor.findMatchHighlightBackground": alpha(p.accent2, 0.15),
+    "editor.findMatchBackground": alpha(p.number, 0.35),
+    "editor.findMatchHighlightBackground": alpha(p.number, 0.15),
     "editor.wordHighlightBackground": alpha(primaryOnLight, 0.15),
     "editorBracketMatch.background": alpha(primaryOnLight, 0.20),
     "editorBracketMatch.border": alpha(primaryOnLight, 0.50),
@@ -58,7 +58,7 @@ module.exports = function generateLightWorkbench(palette) {
     "editorGutter.deletedBackground": PANTONE_TRUE_RED,
     "editorError.foreground": PANTONE_TRUE_RED,
     "editorWarning.foreground": PANTONE_AMBER,
-    "editorInfo.foreground": darken(p.complementary, 10),
+    "editorInfo.foreground": darken(p.string, 10),
 
     // Sidebar
     "sideBar.background": l.bgSecondary,
@@ -73,7 +73,7 @@ module.exports = function generateLightWorkbench(palette) {
     "activityBar.foreground": primaryOnLight,
     "activityBar.inactiveForeground": l.fgDimmed,
     "activityBar.border": l.border,
-    "activityBarBadge.background": darken(p.complementary, 10),
+    "activityBarBadge.background": darken(p.string, 10),
     "activityBarBadge.foreground": p.pantoneWhite,
 
     // Title Bar
@@ -99,7 +99,7 @@ module.exports = function generateLightWorkbench(palette) {
     "statusBar.background": primaryOnLight,
     "statusBar.foreground": onPrimary,
     "statusBar.border": l.border,
-    "statusBar.debuggingBackground": darken(p.complementary, 10),
+    "statusBar.debuggingBackground": darken(p.string, 10),
     "statusBar.debuggingForeground": p.pantoneWhite,
     "statusBar.noFolderBackground": l.bgTertiary,
     "statusBarItem.hoverBackground": alpha(p.pantoneWhite, 0.20),
@@ -114,7 +114,7 @@ module.exports = function generateLightWorkbench(palette) {
     "inputOption.activeBorder": primaryOnLight,
     "inputValidation.errorBorder": PANTONE_TRUE_RED,
     "inputValidation.warningBorder": PANTONE_AMBER,
-    "inputValidation.infoBorder": darken(p.complementary, 10),
+    "inputValidation.infoBorder": darken(p.string, 10),
 
     // Dropdown
     "dropdown.background": l.bg,
@@ -148,7 +148,7 @@ module.exports = function generateLightWorkbench(palette) {
 
     // Minimap
     "minimap.background": l.bg,
-    "minimap.findMatchHighlight": alpha(p.accent2, 0.50),
+    "minimap.findMatchHighlight": alpha(p.number, 0.50),
     "minimap.selectionHighlight": alpha(primaryOnLight, 0.30),
 
     // Panel
@@ -211,8 +211,8 @@ module.exports = function generateLightWorkbench(palette) {
     // Focus & Misc
     "focusBorder": alpha(primaryOnLight, 0.50),
     "selection.background": alpha(primaryOnLight, 0.20),
-    "textLink.foreground": darken(p.complementary, 10),
-    "textLink.activeForeground": darken(p.complementary, 20),
+    "textLink.foreground": darken(p.string, 10),
+    "textLink.activeForeground": darken(p.string, 20),
     "progressBar.background": primaryOnLight,
     "icon.foreground": l.fgDimmed,
     "descriptionForeground": l.fgDimmed,
