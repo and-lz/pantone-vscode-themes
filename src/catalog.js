@@ -105,4 +105,8 @@ module.exports = [
   { name: "Lilac",            code: "677",   hex: "#e8d4e2" },
   { name: "Plum",             code: "5145",  hex: "#5e2b4e" },
   { name: "Slate Blue",       code: "7688",  hex: "#4a6fa5" },
+
+  // Utility Pantone extremes (for onPrimary, shadows, etc.)
+  { name: "Bright White",     code: "11-0601", hex: "#f4f5f0" },
+  { name: "Jet Black",        code: "419",     hex: "#212322" },
 ];

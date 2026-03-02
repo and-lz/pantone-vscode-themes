@@ -5,9 +5,13 @@
   "version": "0.1.0",
   "publisher": "AndlzEngineering",
   "license": "MIT",
+  "main": "./extension.js",
   "engines": {
     "vscode": "^1.60.0"
   },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "categories": [
     "Themes"
   ],
@@ -16,7 +20,8 @@
     "color-theme",
     "pantone",
     "dark-theme",
-    "light-theme"
+    "light-theme",
+    "peacock"
   ],
   "galleryBanner": {
     "color": "#a47864",
@@ -35,6 +40,12 @@
     "package": "vsce package"
   },
   "contributes": {
+    "commands": [
+      {
+        "command": "pantoneTheme.matchPeacock",
+        "title": "Pantone Theme: Match Peacock Color"
+      }
+    ],
     "themes": [
       {
         "label": "Pantone Mocha Mousse (Dark)",

@@ -6,9 +6,9 @@ const curatedPalettes = require('./curated-palettes');
 /**
  * Generate a full palette for a given primary Pantone color.
  *
- * Syntax colors are looked up from hand-curated palette definitions.
- * Workbench colors (bg, fg, border) are still derived mechanically
- * from the primary + neutral via brightness adjustments.
+ * ALL syntax colors are real Pantone colors looked up from curated palettes.
+ * Workbench colors (bg, fg, border) are derived from primary + neutral
+ * via brightness adjustments — unavoidable for extreme dark/light values.
  */
 function generatePalette(primary, catalog) {
   const curated = curatedPalettes[primary.name];
@@ -36,12 +36,33 @@ function generatePalette(primary, catalog) {
 
   const slug = primary.name.toLowerCase().replace(/\s+/g, '-');
 
+  // Pantone-to-Pantone mapping for light mode structural colors.
+  // Dark mode uses lighter Pantone colors; light mode swaps to darker ones.
+  // Both sides are real Pantone catalog entries.
+  const LIGHT_COUNTERPART = {
+    // Light Pantone          → Darker Pantone (both real catalog entries)
+    "Dusty Blue":   "Steel Blue",     // #7ba0b4 → #5b7b8d
+    "Steel Blue":   "Graphite",       // #5b7b8d → #4e5358
+    "Khaki":        "Mocha Mousse",   // #b9a384 → #a47864
+    "Sand Dollar":  "Khaki",          // #decdbe → #b9a384
+    "Rose Quartz":  "Mauve",          // #f7cac9 → #7e4d61
+    "Silver":       "Steel Blue",     // #8a8d8f → #5b7b8d
+    "Pewter":       "Graphite",       // #9a9e9d → #4e5358
+    "Slate Blue":   "Slate Blue",     // #4a6fa5 — already dark enough
+    "Bright White": "Jet Black",      // #f4f5f0 → #212322
+  };
+
+  const lightStructural = (name) => {
+    const darkName = LIGHT_COUNTERPART[name];
+    return darkName ? lookup(darkName) : lookup(name);
+  };
+
   return {
     name: primary.name,
     slug,
     code: primary.code,
 
-    // Curated syntax colors — every pairing intentional
+    // Curated syntax colors — every one a real Pantone color
     primary:       P,
     keyword:       P,
     string:        lookup(curated.string),
@@ -52,9 +73,24 @@ function generatePalette(primary, catalog) {
     number:        lookup(curated.number),
     neutral:       N,
 
-    pantoneWhite: lighten(N, 92),
+    // Structural syntax colors — all real Pantone colors
+    comment:       lookup(curated.comment),
+    variable:      lookup(curated.variable),
+    operator:      lookup(curated.operator),
+    punctuation:   lookup(curated.punctuation),
+
+    // Real Pantone white (not derived)
+    pantoneWhite:  lookup("Bright White"),
+    pantoneBlack:  lookup("Jet Black"),
+
+    // Light mode structural counterparts (Pantone-to-Pantone swaps)
+    lightComment:     lightStructural(curated.comment),
+    lightVariable:    lightStructural(curated.variable),
+    lightOperator:    lightStructural(curated.operator),
+    lightPunctuation: lightStructural(curated.punctuation),
 
     // Workbench colors — derived from primary + neutral
+    // (unavoidable: dark themes need #1a-#2a, light themes need #f0-#ff)
     dark: {
       bg:          darken(P, darkPct),
       bgSecondary: darken(P, darkPct - 5),

@@ -4,10 +4,11 @@ const fs = require('fs');
 const path = require('path');
 const catalog = require('./catalog');
 const { generatePalette } = require('./palette-generator');
+const curatedPalettes = require('./curated-palettes');
 const generateDarkWorkbench = require('./templates/workbench-dark');
 const generateLightWorkbench = require('./templates/workbench-light');
 const generateTokenColors = require('./templates/token-colors');
-const { lighten, darken, contrastRatio } = require('./utils/color');
+const { contrastRatio } = require('./utils/color');
 
 const THEMES_DIR = path.join(__dirname, '..', 'themes');
 const PKG_PATH = path.join(__dirname, '..', 'package.json');
@@ -23,47 +24,47 @@ for (const f of fs.readdirSync(THEMES_DIR)) {
   }
 }
 
+/**
+ * Resolve syntax colors for a given mode.
+ *
+ * ALL colors are real Pantone — no lighten/darken mutation.
+ * Dark mode uses the curated Pantone colors directly.
+ * Light mode uses Pantone-to-Pantone counterparts from the palette.
+ */
 function resolveSyntaxColors(palette, mode) {
-  const base = palette[mode];
+  if (mode === 'dark') {
+    return {
+      keyword:     palette.keyword,
+      comment:     palette.comment,
+      string:      palette.string,
+      number:      palette.number,
+      type:        palette.type,
+      function:    palette.function,
+      variable:    palette.variable,
+      constant:    palette.constant,
+      className:   palette.className,
+      tag:         palette.keyword,
+      attribute:   palette.function,
+      operator:    palette.operator,
+      punctuation: palette.punctuation,
+    };
+  }
 
-  const adjust = mode === 'dark'
-    ? (color) => {
-        let c = color;
-        let ratio = contrastRatio(c, base.bg);
-        let attempts = 0;
-        while (ratio < 4.5 && attempts < 15) {
-          c = lighten(c, 8);
-          ratio = contrastRatio(c, base.bg);
-          attempts++;
-        }
-        return c;
-      }
-    : (color) => {
-        let c = color;
-        let ratio = contrastRatio(c, base.bg);
-        let attempts = 0;
-        while (ratio < 4.5 && attempts < 15) {
-          c = darken(c, 8);
-          ratio = contrastRatio(c, base.bg);
-          attempts++;
-        }
-        return c;
-      };
-
+  // Light mode: use Pantone-to-Pantone light counterparts for structural colors
   return {
-    keyword:     adjust(palette.keyword),
-    comment:     base.fgDimmed,
-    string:      adjust(palette.string),
-    number:      adjust(palette.number),
-    type:        adjust(palette.type),
-    function:    adjust(palette.function),
-    variable:    base.fg,
-    constant:    adjust(palette.constant),
-    className:   adjust(palette.className),
-    tag:         adjust(palette.keyword),
-    attribute:   adjust(palette.function),
-    operator:    adjust(lighten(palette.keyword, 15)),
-    punctuation: base.fgDimmed,
+    keyword:     palette.keyword,
+    comment:     palette.lightComment,
+    string:      palette.string,
+    number:      palette.number,
+    type:        palette.type,
+    function:    palette.function,
+    variable:    palette.lightVariable,
+    constant:    palette.constant,
+    className:   palette.className,
+    tag:         palette.keyword,
+    attribute:   palette.function,
+    operator:    palette.lightOperator,
+    punctuation: palette.lightPunctuation,
   };
 }
 
@@ -132,6 +133,9 @@ let totalThemes = 0;
 let totalWarnings = 0;
 
 for (const color of catalog) {
+  // Skip utility colors that aren't theme primaries (no curated palette)
+  if (!curatedPalettes[color.name]) continue;
+
   const palette = generatePalette(color, catalog);
 
   const darkResult = buildTheme(palette, 'dark');
